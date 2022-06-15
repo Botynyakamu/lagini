@@ -44,7 +44,7 @@ const defaultMenu = {
 ║│ ┅ ๑————————————๑
 ╰─────────❉
 %readmore`.trimStart(), 
-  header: '┌─「 %category 」',
+  header: '║╭──❉「 %category 」',
   body: '║│➸ %cmd %islimit %isPremium',
   footer: '└────\n', 
   after: ``,
