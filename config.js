@@ -15,7 +15,7 @@ global.gopay = '085828764046'
 //=============『 Info Bot 』=================//
 global.namebot = '⳹ ❋ཻུ۪۪⸙Zifabotz-MD⳹ ❋ཻུ۪۪'
 global.gc = 'https://chat.whatsapp.com/I8Q4oJVw8buHhIgMH5iVAv'
-global.web = 'https://hyzerr-apii.herokuapp.com' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
+global.web = 'https://wa.me/message/LSVGQQPG6FUQF1' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
 global.price1 = 'SEWA BOT 10K PERMANEN '
 
 //=======『 Tampilan Dan Lainnya 』============//
