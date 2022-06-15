@@ -22,31 +22,26 @@ let moment = require('moment-timezone')
 //━━━━━━━━[ DEFAULT MENU ]━━━━━━━━//
 const defaultMenu = {
   before:`
-╭═══════════════════════⬣
-║╭──❉ 〔⳹ ❋ཻུ۪۪TENTANG ANDA⳹ ❋ཻུ۪۪〕 ❉──────
-║ ┅ ๑————————————๑
-║│┊⌲ Hai, %name!
-║│┊⌲ Tersisa *%limit Limit*
-║│┊⌲ Role *%role*
-║│┊⌲ Level *%level (%exp / %maxexp)*
-║│┊⌲ [%xp4levelup]
-║│┊⌲ %totalexp XP secara Total
-║╭──❉ 〔⳹ ❋ཻུ۪۪⸙TANGGAL⳹ ❋ཻུ۪۪〕 ❉──────
-║│┊⌲ Hari: *%week %weton*
-║│┊⌲ Tanggal: *%date*
-║│┊⌲ WaktuIslam:*%dateIslamic*
-║│┊⌲ Waktu: *%time*
-║╭──❉ 〔⳹ ❋ཻུ۪۪⸙TIME⳹ ❋ཻུ۪۪〕 ❉──────
-║│┊⌲ Uptime: *%uptime (%muptime)*
-║│┊⌲ Database: %rtotalreg dari %totalreg
-║│┊⌲ Memory Used : 
-║│┊⌲ ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-║│ ┅ ๑————————————๑
-╰─────────❉
+┌─「 *${global.namebot}* 」
+├ Hai, %name!
+├ Tersisa *%limit Limit*
+├ Role *%role*
+├ Level *%level (%exp / %maxexp)*
+├ [%xp4levelup]
+├ %totalexp XP secara Total
+│ 
+├ Tanggal: *%week %weton, %date*
+├ Tanggal Islam: *%dateIslamic*
+├ Waktu: *%time*
+│
+├ Uptime: *%uptime (%muptime)*
+├ Database: %rtotalreg dari %totalreg
+├ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
+└────
 %readmore`.trimStart(), 
-  header: '║╭──❉「 %category 」',
-  body: '║│➸ %cmd %islimit %isPremium',
-  footer: '*╰───❉*\n', 
+  header: '┌─「 %category 」',
+  body: '├ %cmd %islimit %isPremium',
+  footer: '└────\n', 
   after: ``,
 }
 
