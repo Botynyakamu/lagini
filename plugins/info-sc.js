@@ -1,24 +1,22 @@
-/*
- * ngelarang lu biar g diubah kyknya emg susah ya anjg
- * jadi kalau lu g bsa ngehargain orang
- * setidaknya buat sc ori by gw, trs buat sc lu hasil copas tuh
- * better bgtu dripada nma gw dihapus smua
- * najis 👎🗿
-*/
-
-let handler = async (m, { conn }) => {
-let ye = `@${m.sender.split`@`[0]}`
-let esce = `
-Hai ${ye} Lagi Nyari Sc Ya? 
-
-Nih Link Sc Nya Dibawah :
-https://youtu.be/AXPzjQ5jxx8
-
-_*Jangan Lupa Di Subscribe*_`
-conn.sendBut(m.chat, esce, wm3, 'Thanks', 'thanks', m) 
+let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
+let text = `*${htki} MAU NGAPAIN OM ${htka}*
+`
+const templateButtons = [
+    {index: 1, urlButton: {displayText: '🐈 My Github', url: sgh}},
+    {index: 2, urlButton: {displayText: '🌎 Official Group', url: sgc}},
+    {index: 3, quickReplyButton: {displayText: 'Menu', id: '.menu'}},
+    {index: 4, quickReplyButton: {displayText: 'Donasi', id: '.donasi'}},
+]
+let tm = {
+text: text,
+footer: global.wm,
+templateButtons: templateButtons,
+image: thumb
 }
-handler.help = ['sc', 'sourcecode']
+conn.sendMessage(m.chat, tm, m)
+}
+handler.help = ['sc']
 handler.tags = ['info']
-handler.command = /^(sc|sourcecode)$/i
+handler.command = /^(s(ourcode|c))$/i
 
-module.exports = handler
+export default handler
